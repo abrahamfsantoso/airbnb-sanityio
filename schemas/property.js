@@ -35,12 +35,12 @@ export default {
         hotspot: true,
       },
     },
-    // {
-    //   name: 'images',
-    //   title: 'Images',
-    //   type: 'array',
-    //   of: [{ type: 'propertyImage' }],
-    // },
+    {
+      name: 'images',
+      title: 'Images',
+      type: 'array',
+      of: [{ type: 'propertyImage' }],
+    },
     {
       name: 'pricePerNight',
       title: 'Price Per Night',
@@ -75,6 +75,22 @@ export default {
       title: 'Description',
       type: 'string',
     },
-    
-  ]
+    {
+      name: 'host',
+      title: 'host',
+      type: 'host',
+    },
+    {
+      name: 'reviews',
+      title: 'Reviews',
+      type: 'array',
+      of: [{ type: 'review' }],
+    },
+  ],
+  preview: {
+    select: {
+      title: 'title',
+      pricePerNight: 'pricePerNight',
+    },
+  },
 }
